@@ -1,123 +1,137 @@
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #ffecd2, #fcb69f);
-    color: #333;
-    text-align: center;
-    padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+  text-align: center;
+  padding: 20px;
 }
 
+.about-header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 .about-header {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about-header h1 {
-    font-size: 2.5rem;
-    color: #fff;
-    background: #ff6b81;
-    padding: 15px;
-    border-radius: 10px;
-    display: inline-block;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .about-header p {
-    font-size: 1.1rem;
-    margin-top: 15px;
-    line-height: 1.6;
-}
-
-
-.about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    max-width: 800px;
-    margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 .about-image {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 .about-image:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
 @media only screen and (max-width: 768px) {
-    .image-gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .about-image {
-      height: 100px;
-    }
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  
-  @media only screen and (max-width: 480px) {
-    .image-gallery {
-      grid-template-columns: 1fr;
-    }
-    .about-image {
-      height: 150px;
-    }
+  .about-image {
+    height: 100px;
   }
-  
-  
+}
 
-
+@media only screen and (max-width: 480px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+  .about-image {
+    height: 150px;
+  }
+}
 
 .courses {
-    margin-top: 40px;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .courses-header h1 {
-    font-size: 2rem;
-    color: #00796b;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 20px;
 }
-
 
 .course-table {
-    width: 80%;
-    margin: auto;
-    border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
 }
 
-.course-table th, .course-table td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: left;
+.course-table th,
+.course-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
 }
 
 .course-table th {
-    background: #00796b;
-    color: white;
+  background: #00796b;
+  color: white;
 }
 
 .course-table ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .course-table ul li {
-    margin: 5px 0;
+  margin: 5px 0;
+}
+
+.nav {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ccc;
 }
